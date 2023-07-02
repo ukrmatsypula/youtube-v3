@@ -11,8 +11,6 @@ const count = ref(0)
 <template>
   <h1>{{ msg }}</h1>
 
-  <h3 class="bg-red-500 text-white text-2xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque illum nobis non quia sed.</h3>
-
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
