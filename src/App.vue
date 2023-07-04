@@ -1,12 +1,10 @@
 <template>
-
   <TheHeader/>
   <TheSidebarSmall/>
   <TheSidebar/>
   <TheSidebarMobile/>
   <TheCategories/>
   <TheVideos/>
-
 </template>
 
 <script>
