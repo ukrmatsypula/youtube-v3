@@ -4,20 +4,21 @@
   >
     <div class="border-t border-b px-4 max-w-screen-2xl mx-auto">
       <div class="py-3 flex space-x-3 overflow-auto text-sm whitespace-nowrap">
-        <a
-          v-for="(categoty, index) in categories"
+        <CategoryItem
+          v-for="(category, index) in categories"
           :key="index"
-          href="#"
-          class="px-3 py-1 transition bg-gray-600 border border-gray-700 rounded-full hover:bg-gray-500 text-white"
-          >{{ categoty }}</a
-        >
+          :category="category"
+          :isActive="category === 'All'"
+        />
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import CategoryItem from "./CategoryItem.vue";
 export default {
+  components: { CategoryItem },
   data: () => ({
     categories: [
       "All",
