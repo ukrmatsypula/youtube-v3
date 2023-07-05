@@ -3,18 +3,7 @@
     <div class="lg:w-1/4 flex">
       <div class="flex items-center xl:w-64 xl:bg-white pl-4">
         <button class="mr-3 sm:ml-2 sm:mr-6 focus:outline-none">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-              clip-rule="evenodd"
-            />
-          </svg>
+          <BaseIcon name="menu" />
         </button>
         <LogoMain />
       </div>
@@ -24,19 +13,7 @@
     >
       <TheSearch />
       <button class="ml-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="w-5 h-5"
-        >
-          <path
-            d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z"
-          />
-          <path
-            d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z"
-          />
-        </svg>
+        <BaseIcon name="microphone" class="w-5 h-5" />
       </button>
     </div>
     <div
@@ -109,6 +86,7 @@
 </template>
 
 <script>
+import BaseIcon from "./BaseIcon.vue";
 import LogoMain from "./LogoMain.vue";
 import ButtonLogin from "./ButtonLogin.vue";
 import TheSearch from "./TheSearch.vue";
@@ -117,6 +95,7 @@ import TheDropdownSettings from "./TheDropdownSettings.vue";
 
 export default {
   components: {
+    BaseIcon,
     LogoMain,
     ButtonLogin,
     TheSearch,
